@@ -3,7 +3,8 @@ A command line utility to easily add many anki cards at once.
 
 # About
 Anki-Bulk-Adder is a small project that is written in vanilla C with no calls to any external libraries apart from C's standard libs. It's only requirements is Anki and the AnkiConnect extension. The only problem right now is probably how windows defers from dealing with pretty output in the same way with *nix systems. 
-
+# Compiling
+For compiling I used gcc so in the directory of the files: ```gcc *.c -o Anki-Bulk-Adder```
 # Usage
 ```./{executable-name} -f {filepath} [--json]```
 ##### --json tag will give you unformatted json output compared to the more readable output provided by the application
@@ -14,6 +15,7 @@ that's all!
 **Note:** after you add the name of a deck, the next lines don't need to have the deck name if you are planning to add to the same deck e.g:
     ```
     Bonjour,Hello,greetings
+    
     Здравствуйте,Hello
     ```
 In this case Bonjour and Здравствуйте will both be added to the deck 'greetings'
