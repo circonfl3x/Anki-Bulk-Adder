@@ -13,11 +13,10 @@ For compiling I used gcc so in the directory of the files: ```gcc *.c -o Anki-Bu
 ```front,back,name of deck```
 that's all!
 **Note:** after you add the name of a deck, the next lines don't need to have the deck name if you are planning to add to the same deck e.g:
-    ```
-    Bonjour,Hello,greetings
-    \n
-    Здравствуйте,Hello
-    ```
+```
+Bonjour,Hello,greetings
+Здравствуйте,Hello
+```
 In this case Bonjour and Здравствуйте will both be added to the deck 'greetings'
 
 # Notes
