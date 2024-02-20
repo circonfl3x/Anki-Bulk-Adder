@@ -15,7 +15,7 @@ that's all!
 **Note:** after you add the name of a deck, the next lines don't need to have the deck name if you are planning to add to the same deck e.g:
     ```
     Bonjour,Hello,greetings
-         
+    \n
     Здравствуйте,Hello
     ```
 In this case Bonjour and Здравствуйте will both be added to the deck 'greetings'
