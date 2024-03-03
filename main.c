@@ -84,7 +84,7 @@ int main(int argc, char **argv)
     exit(1);
   }
 
-  char buff[1023];
+  char buff[1024];
 
   currentDeck = malloc(1);
   *currentDeck = '\0';
@@ -94,7 +94,7 @@ int main(int argc, char **argv)
   // cards.nums = 0;
 
   // strcpy(buf, "POST /deckNames HTTP/1.1");
-  while(fgets(buff, 1024,f))
+  while(fgets(buff, 1023,f))
   {
     char **parse = parser(buff);
     add_elem(&cards, *parse,parse[1]);
