@@ -1,4 +1,4 @@
-#include "bulk.h"
+#include "main.h"
 #include <stdbool.h>
 char *currentDeck;
 vec cards;

@@ -7,7 +7,7 @@
 #include <stdarg.h>
 #include <string.h>
 #include <math.h>
-#include "bulk.h"
+#include "main.h"
 char *HTTP_builder(const char *txt, ...);
 void HTTP_write_buf(const char *buf, int sockd);
 char *HTTP_read_buf(int sockd);

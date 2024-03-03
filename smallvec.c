@@ -1,5 +1,6 @@
-#include "bulk.h"
+#include "main.h"
 #include <string.h>
+#include <stdlib.h>
 void add_elem(vec *v, const char *front, const char *back)
 {
    v->nums ++;
