@@ -286,14 +286,14 @@ char *generate_HTTP_content(const char *front, const char *back)
     //                 "\"Front\": \"front content12345\",\r\n"
     //                 "\"Back\": \"back content\"\r\n";
     char *deckName = strndup(currentDeck, strcspn(currentDeck, "\n"));
-    char *construct = malloc(strlen("{\r\n\"deckName\": \"\",\r\n") + strlen(deckName) + strlen("\"modelName\": \"Reversed\",\r\n") + strlen("\"fields\": {\r\n") + strlen("\"Front\": ") + 1);
+    char *construct = malloc(strlen("{\r\n\"deckName\": \"\",\r\n") + strlen(deckName) + strlen("\"modelName\": \"Basic\",\r\n") + strlen("\"fields\": {\r\n") + strlen("\"Front\": ") + 1);
     *construct = '\0';
     strcat(construct, "{\r\n");
     //strcat(construct, "\"deckName\": \"Default\",\r\n");
     strcat(construct, "\"deckName\": \"");
     strcat(construct, deckName);
     strcat(construct, "\",\r\n");
-    strcat(construct, "\"modelName\": \"Reversed\",\r\n");
+    strcat(construct, "\"modelName\": \"Basic\",\r\n");
     strcat(construct, "\"fields\": {\r\n");
     strcat(construct, "\"Front\": ");
 
