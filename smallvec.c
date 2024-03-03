@@ -19,5 +19,6 @@ void v_free(vec *v) {
   for (unsigned long i = 0; i < v->nums; ++i) {
     free(v->front[i]);
     free(v->back[i]);
+    free(v->deck[i]);
   }
 }
