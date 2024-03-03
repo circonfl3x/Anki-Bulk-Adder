@@ -31,9 +31,9 @@ void parse_return(const char *ret)
 
                 if(strcmp(tok, "null") == 0){
                     if(!is_err){
-                        printf("Couldn't add card (%s,%s) to deck %s\n", cards.front[i], cards.back[i], currentDeck);
-                    }else printf("Couldn't add card (%s,%s) to deck %s. Error: %s\n", cards.front[i], cards.back[i], currentDeck, error);
-                }else printf("Successfully added card (%s,%s) to deck %s. Code: %s\n", cards.front[i], cards.back[i], currentDeck, submitted);
+                        printf("Couldn't add card (%s,%s) to deck %s\n", cards.front[i], cards.back[i], cards.deck[i]);
+                    }else printf("Couldn't add card (%s,%s) to deck %s. Error: %s\n", cards.front[i], cards.back[i], cards.deck[i], error);
+                }else printf("Successfully added card (%s,%s) to deck %s. Code: %s\n", cards.front[i], cards.back[i], cards.deck[i], submitted);
                 tok = strtok(NULL, ", ");
 
             }

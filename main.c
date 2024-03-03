@@ -97,7 +97,7 @@ int main(int argc, char **argv)
   while(fgets(buff, 1023,f))
   {
     char **parse = parser(buff);
-    add_elem(&cards, *parse,parse[1]);
+    add_elem(&cards, *parse,parse[1], currentDeck);
     //printf("%s\n", currentDeck);
     char *content = generate_HTTP_content(*parse,parse[1] );
     buf = realloc(buf, strlen(content) + strlen(buf) + 1);
@@ -119,7 +119,7 @@ int main(int argc, char **argv)
     puts("");
     for(size_t i = 0; i < cards.nums; ++i)
     {
-        printf("[%lu] Adding Card (%s,%s) -> %s\n", i+1, cards.front[i], cards.back[i], currentDeck);
+        printf("[%lu] Adding Card (%s,%s) -> %s\n", i+1, cards.front[i], cards.back[i], cards.deck[i]);
     }
     puts("");
   }

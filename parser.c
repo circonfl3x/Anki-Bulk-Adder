@@ -51,6 +51,6 @@ char **parser(const char *line)
   //currentDeck = txt[2];
   currentDeck = realloc(currentDeck, strlen(txt[2]) + 1);
   strcpy(currentDeck, txt[2]);
-
+  
   return txt;
 }
