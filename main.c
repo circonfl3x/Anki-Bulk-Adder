@@ -20,6 +20,8 @@ char *generate_HTTP_content(const char *front, const char *back);
 char *json_f_to_string(const char *fpath);
 char *new_JSON_buff();
 char *currentDeck;
+vec cards;
+bool print_json;
 void end_JSON_buff(char *HTTP);
 #define fmt_Content_Length(x) _Generic((x), int:ifcl,long:lfcl,unsigned long:lfcl, const char *:sfcl,char*:sfcl)(x);
 

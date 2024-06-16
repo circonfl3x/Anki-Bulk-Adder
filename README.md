@@ -6,7 +6,7 @@ Anki-Bulk-Adder is a small project that is written in vanilla C with no calls to
 # Compiling
 For compiling I used gcc so in the directory of the files: 
 ```sh
-gcc *.c -o Anki-Bulk-Adder
+gcc *.c -lm -o Anki-Bulk-Adder
 ```
 # Usage
 ```./{executable-name} -f {filepath} [--json]```

@@ -1,5 +1,5 @@
 #include "main.h"
 #include <stdbool.h>
-char *currentDeck;
-vec cards;
-bool print_json;
+extern char *currentDeck;
+extern vec cards;
+extern bool print_json;
